@@ -30,4 +30,10 @@ public class Bus extends Vehicle {
   public void setServiceType(ServiceType serviceType) {
     this.serviceType = serviceType;
   }
+
+  @Override
+  public void calculateOperatingCost() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+  }
 }

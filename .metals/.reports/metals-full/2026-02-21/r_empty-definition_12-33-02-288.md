@@ -1,6 +1,16 @@
+error id: file://<HOME>/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java:_empty_/Assignable#
+file://<HOME>/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java
+empty definition using pc, found symbol in pc: _empty_/Assignable#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 758
+uri: file://<HOME>/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java
+text:
+```scala
 package com.huerta.fleetmanagementsystem.model.vehicle;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.huerta.fleetmanagementsystem.interfaces.Assignable;
@@ -16,7 +26,7 @@ import com.huerta.fleetmanagementsystem.model.person.Driver;
 import lombok.Getter;
 
 @Getter
-public abstract class Vehicle implements Assignable, Calculable, Maintainable, Reportable {
+public abstract class Vehicle implements Assign@@able, Calculable, Maintainable, Reportable {
 
   private long id;
   private String licensePlate;
@@ -42,7 +52,6 @@ public abstract class Vehicle implements Assignable, Calculable, Maintainable, R
     this.engine = new Engine();
     this.transmission = new Transmission();
     this.breakingSystem = new BreakingSystem();
-    this.maintenanceRecords = new ArrayList<>();
   }
 
   public void setId(long id) {
@@ -70,7 +79,7 @@ public abstract class Vehicle implements Assignable, Calculable, Maintainable, R
   }
 
   @Override
-  public void registerMaintenance(MaintenanceRecord maintenanceRecord) {
+  public void registerMaintenance() {
     // TODO Auto-generated method stub
 
   }
@@ -80,24 +89,11 @@ public abstract class Vehicle implements Assignable, Calculable, Maintainable, R
     // TODO Auto-generated method stub
     return null;
   }
-
-  @Override
-  public void assignDriver(Driver driver) {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  public void releaseDriver() {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  public double calculateDepreciation() {
-    // TODO Auto-generated method stub
-    return 0;
-  }
-
-  public abstract void calculateOperatingCost();
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/Assignable#

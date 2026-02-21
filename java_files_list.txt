@@ -1,0 +1,595 @@
+./src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java
+package com.huerta.fleetmanagementsystem.app;
+
+class FleetManagementApplication {
+
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java
+package com.huerta.fleetmanagementsystem.gui;
+
+public class DriverPanel {
+
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java
+package com.huerta.fleetmanagementsystem.gui;
+
+public class MaintenancePanel {
+
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/gui/MainWindow.java
+package com.huerta.fleetmanagementsystem.gui;
+
+public class MainWindow {
+
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java
+package com.huerta.fleetmanagementsystem.gui;
+
+public class VehiclePanel {
+
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/interfaces/Assignable.java
+package com.huerta.fleetmanagementsystem.interfaces;
+
+import com.huerta.fleetmanagementsystem.model.person.Driver;
+
+public interface Assignable {
+  void assignDriver(Driver driver);
+
+  void releaseDriver();
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/interfaces/Calculable.java
+package com.huerta.fleetmanagementsystem.interfaces;
+
+public interface Calculable {
+
+  double calculateDepreciation();
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/interfaces/Maintainable.java
+package com.huerta.fleetmanagementsystem.interfaces;
+
+public interface Maintainable {
+  void registerMaintenance();
+
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/interfaces/Reportable.java
+package com.huerta.fleetmanagementsystem.interfaces;
+
+public interface Reportable {
+
+  public String generateReport();
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java
+package com.huerta.fleetmanagementsystem.model.component;
+
+public class BreakingSystem {
+  private BreakingSystem brakingSystem;
+
+  public BreakingSystem() {
+  }
+
+  public BreakingSystem(BreakingSystem brakingSystem) {
+    this.brakingSystem = brakingSystem;
+  }
+
+  public BreakingSystem getBrakingSystem() {
+    return brakingSystem;
+  }
+
+  public void setBrakingSystem(BreakingSystem brakingSystem) {
+    this.brakingSystem = brakingSystem;
+  }
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/component/Engine.java
+package com.huerta.fleetmanagementsystem.model.component;
+
+public class Engine {
+  private String engineType;
+
+  private String displacement;
+
+  private String horsepower;
+
+  public Engine() {
+  }
+
+  public Engine(String engineType, String displacement, String horsepower) {
+    this.engineType = engineType;
+    this.displacement = displacement;
+    this.horsepower = horsepower;
+  }
+
+  public String getEngineType() {
+    return engineType;
+  }
+
+  public String getDisplacement() {
+    return displacement;
+  }
+
+  public String getHorsepower() {
+    return horsepower;
+  }
+
+  public void setEngineType(String engineType) {
+    this.engineType = engineType;
+  }
+
+  public void setDisplacement(String displacement) {
+    this.displacement = displacement;
+  }
+
+  public void setHorsepower(String horsepower) {
+    this.horsepower = horsepower;
+  }
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/component/Transmission.java
+package com.huerta.fleetmanagementsystem.model.component;
+
+import com.huerta.fleetmanagementsystem.model.enums.TransmissionType;
+
+public class Transmission {
+  private int numberOfGears;
+
+  TransmissionType transmissionType;
+
+  public Transmission() {
+  }
+
+  public Transmission(int numberOfGears, TransmissionType transmissionType) {
+    this.numberOfGears = numberOfGears;
+    this.transmissionType = transmissionType;
+  }
+
+  public int getNumberOfGears() {
+    return numberOfGears;
+  }
+
+  public void setNumberOfGears(int numberOfGears) {
+    this.numberOfGears = numberOfGears;
+  }
+
+  public TransmissionType getTransmissionType() {
+    return transmissionType;
+  }
+
+  public void setTransmissionType(TransmissionType transmissionType) {
+    this.transmissionType = transmissionType;
+  }
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/enums/BrakeType.java
+package com.huerta.fleetmanagementsystem.model.enums;
+
+public enum BrakeType {
+  DISC,
+  DRUM
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/enums/ServiceType.java
+package com.huerta.fleetmanagementsystem.model.enums;
+
+public enum ServiceType {
+
+  CITY,
+  INTERCITY
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/enums/TransmissionType.java
+package com.huerta.fleetmanagementsystem.model.enums;
+
+public enum TransmissionType {
+  MANUAL,
+  AUTOMATIC
+}******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java
+package com.huerta.fleetmanagementsystem.model.fleet;
+
+import java.sql.Driver;
+import java.util.List;
+
+import com.huerta.fleetmanagementsystem.model.vehicle.Vehicle;
+
+public class Fleet {
+  private List<Vehicle> vehicles;
+
+  private List<Driver> drivers;
+
+  public Fleet(List<Vehicle> vehicles, List<Driver> drivers) {
+    this.vehicles = vehicles;
+    this.drivers = drivers;
+  }
+
+  public List<Vehicle> getVehicles() {
+    return vehicles;
+  }
+
+  public List<Driver> getDrivers() {
+    return drivers;
+  }
+
+  public void setDrivers(List<Driver> drivers) {
+    this.drivers = drivers;
+  }
+
+  public void setVehicles(List<Vehicle> vehicles) {
+    this.vehicles = vehicles;
+  }
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/maintenance/MaintenanceRecord.java
+package com.huerta.fleetmanagementsystem.model.maintenance;
+
+import java.time.LocalDate;
+
+public class MaintenanceRecord {
+  private LocalDate date;
+
+  private String type;
+
+  private String description;
+
+  private double cost;
+
+  public MaintenanceRecord(LocalDate date, String type, String description, double cost) {
+    this.date = date;
+    this.type = type;
+    this.description = description;
+    this.cost = cost;
+  }
+
+  public LocalDate getDate() {
+    return date;
+  }
+
+  public String getType() {
+    return type;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public double getCost() {
+    return cost;
+  }
+
+  public void setDate(LocalDate date) {
+    this.date = date;
+  }
+
+  public void setType(String type) {
+    this.type = type;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  public void setCost(double cost) {
+    this.cost = cost;
+  }
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/person/Driver.java
+package com.huerta.fleetmanagementsystem.model.person;
+
+public class Driver {
+  private String fullName;
+
+  private int yearsOfExperience;
+
+  public Driver(String fullName, int yearsOfExperience) {
+    this.fullName = fullName;
+    this.yearsOfExperience = yearsOfExperience;
+  }
+
+  public String getFullName() {
+    return fullName;
+  }
+
+  public int getYearsOfExperience() {
+    return yearsOfExperience;
+  }
+
+  public void setFullName(String fullName) {
+    this.fullName = fullName;
+  }
+
+  public void setYearsOfExperience(int yearsOfExperience) {
+    this.yearsOfExperience = yearsOfExperience;
+  }
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/vehicle/Bus.java
+package com.huerta.fleetmanagementsystem.model.vehicle;
+
+import com.huerta.fleetmanagementsystem.model.enums.ServiceType;
+
+public class Bus extends Vehicle {
+
+  private int passengerCapacity;
+
+  private ServiceType serviceType;
+
+  public Bus(long id, String licensePlate, String make, String model, int year, int passengerCapacity,
+      ServiceType serviceType) {
+    super(id, licensePlate, make, model, year);
+    this.passengerCapacity = passengerCapacity;
+    this.serviceType = serviceType;
+  }
+
+  public int getPassengerCapacity() {
+    return passengerCapacity;
+  }
+
+  public void setPassengerCapacity(int passengerCapacity) {
+    this.passengerCapacity = passengerCapacity;
+  }
+
+  public ServiceType getServiceType() {
+    return serviceType;
+  }
+
+  public void setServiceType(ServiceType serviceType) {
+    this.serviceType = serviceType;
+  }
+
+  @Override
+  public void calculateOperatingCost() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+  }
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java
+package com.huerta.fleetmanagementsystem.model.vehicle;
+
+public class Car extends Vehicle {
+
+  private int seatingCapacity;
+
+  private String powerSource;
+
+  public Car(long id, String licensePlate, String make, String model, int year, int seatingCapacity,
+      String powerSource) {
+    super(id, licensePlate, make, model, year);
+    this.seatingCapacity = seatingCapacity;
+    this.powerSource = powerSource;
+  }
+
+  public int getSeatingCapacity() {
+    return seatingCapacity;
+  }
+
+  public void setSeatingCapacity(int seatingCapacity) {
+    this.seatingCapacity = seatingCapacity;
+  }
+
+  public String getPowerSource() {
+    return powerSource;
+  }
+
+  public void setPowerSource(String powerSource) {
+    this.powerSource = powerSource;
+  }
+
+  @Override
+  public void calculateOperatingCost() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+  }
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java
+package com.huerta.fleetmanagementsystem.model.vehicle;
+
+public class Motorcycle extends Vehicle {
+
+  private int engineDisplacement;
+
+  public Motorcycle(long id, String licensePlate, String make, String model, int year,
+      int engineDisplacement) {
+    super(id, licensePlate, make, model, year);
+    this.engineDisplacement = engineDisplacement;
+  }
+
+  public int getEngineDisplacement() {
+    return engineDisplacement;
+  }
+
+  public void setEngineDisplacement(int engineDisplacement) {
+    this.engineDisplacement = engineDisplacement;
+  }
+
+  @Override
+  public void calculateOperatingCost() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+  }
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/vehicle/Truck.java
+package com.huerta.fleetmanagementsystem.model.vehicle;
+
+public class Truck extends Vehicle {
+
+  private int payloadCapacity;
+
+  private int axleCount;
+
+  public Truck(long id, String licensePlate, String make, String model, int year, int payloadCapacity,
+      int axleCount) {
+    super(id, licensePlate, make, model, year);
+    this.payloadCapacity = payloadCapacity;
+    this.axleCount = axleCount;
+  }
+
+  public int getPayloadCapacity() {
+    return payloadCapacity;
+  }
+
+  public void setPayloadCapacity(int payloadCapacity) {
+    this.payloadCapacity = payloadCapacity;
+  }
+
+  public int getAxleCount() {
+    return axleCount;
+  }
+
+  public void setAxleCount(int axleCount) {
+    this.axleCount = axleCount;
+  }
+
+  @Override
+  public void calculateOperatingCost() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+  }
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java
+package com.huerta.fleetmanagementsystem.model.vehicle;
+
+import java.util.List;
+
+import com.huerta.fleetmanagementsystem.interfaces.Assignable;
+import com.huerta.fleetmanagementsystem.interfaces.Calculable;
+import com.huerta.fleetmanagementsystem.interfaces.Maintainable;
+import com.huerta.fleetmanagementsystem.interfaces.Reportable;
+import com.huerta.fleetmanagementsystem.model.component.BreakingSystem;
+import com.huerta.fleetmanagementsystem.model.component.Engine;
+import com.huerta.fleetmanagementsystem.model.component.Transmission;
+import com.huerta.fleetmanagementsystem.model.maintenance.MaintenanceRecord;
+import com.huerta.fleetmanagementsystem.model.person.Driver;
+
+import lombok.Getter;
+
+@Getter
+public abstract class Vehicle implements Assignable, Calculable, Maintainable, Reportable {
+
+  private long id;
+  private String licensePlate;
+  private String make;
+  private String model;
+  private int year;
+
+  private Driver driver;
+  private List<MaintenanceRecord> maintenanceRecords;
+  private Engine engine;
+  private Transmission transmission;
+  private BreakingSystem breakingSystem;
+
+  public Vehicle() {
+  }
+
+  public Vehicle(long id, String licensePlate, String make, String model, int year) {
+    this.id = id;
+    this.licensePlate = licensePlate;
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.engine = new Engine();
+    this.transmission = new Transmission();
+    this.breakingSystem = new BreakingSystem();
+  }
+
+  public void setId(long id) {
+    this.id = id;
+  }
+
+  public void setLicensePlate(String licensePlate) {
+    this.licensePlate = licensePlate;
+  }
+
+  public void setModel(String model) {
+    this.model = model;
+  }
+
+  public void setYear(int year) {
+    this.year = year;
+  }
+
+  void setDriver(Driver driver) {
+    this.driver = driver;
+  }
+
+  public void setMaintenanceRecords(List<MaintenanceRecord> maintenanceRecords) {
+    this.maintenanceRecords = maintenanceRecords;
+  }
+
+  @Override
+  public void registerMaintenance() {
+    // TODO Auto-generated method stub
+
+  }
+
+  @Override
+  public String generateReport() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public void assignDriver(Driver driver) {
+    // TODO Auto-generated method stub
+
+  }
+
+  @Override
+  public void releaseDriver() {
+    // TODO Auto-generated method stub
+
+  }
+
+  @Override
+  public double calculateDepreciation() {
+    // TODO Auto-generated method stub
+    return 0;
+  }
+
+  public abstract void calculateOperatingCost();
+}
+******************************************************
+
+./src/com/huerta/fleetmanagementsystem/service/FleetService.java
+package com.huerta.fleetmanagementsystem.service;
+
+public class FleetService {
+
+}
+******************************************************
+

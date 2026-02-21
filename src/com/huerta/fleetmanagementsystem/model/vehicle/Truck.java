@@ -28,4 +28,10 @@ public class Truck extends Vehicle {
   public void setAxleCount(int axleCount) {
     this.axleCount = axleCount;
   }
+
+  @Override
+  public void calculateOperatingCost() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+  }
 }

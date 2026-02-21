@@ -17,4 +17,10 @@ public class Motorcycle extends Vehicle {
   public void setEngineDisplacement(int engineDisplacement) {
     this.engineDisplacement = engineDisplacement;
   }
+
+  @Override
+  public void calculateOperatingCost() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+  }
 }

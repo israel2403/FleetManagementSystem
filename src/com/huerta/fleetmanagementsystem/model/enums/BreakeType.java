@@ -1,6 +1,6 @@
 package com.huerta.fleetmanagementsystem.model.enums;
 
-public enum BrakeType {
+public enum BreakeType {
   DISC,
   DRUM
 }

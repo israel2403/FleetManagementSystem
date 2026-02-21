@@ -1,6 +1,16 @@
+error id: file://<HOME>/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java:_empty_/Transmission#
+file://<HOME>/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java
+empty definition using pc, found symbol in pc: _empty_/Transmission#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 1382
+uri: file://<HOME>/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java
+text:
+```scala
 package com.huerta.fleetmanagementsystem.model.vehicle;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.huerta.fleetmanagementsystem.interfaces.Assignable;
@@ -13,9 +23,6 @@ import com.huerta.fleetmanagementsystem.model.component.Transmission;
 import com.huerta.fleetmanagementsystem.model.maintenance.MaintenanceRecord;
 import com.huerta.fleetmanagementsystem.model.person.Driver;
 
-import lombok.Getter;
-
-@Getter
 public abstract class Vehicle implements Assignable, Calculable, Maintainable, Reportable {
 
   private long id;
@@ -40,64 +47,82 @@ public abstract class Vehicle implements Assignable, Calculable, Maintainable, R
     this.model = model;
     this.year = year;
     this.engine = new Engine();
-    this.transmission = new Transmission();
+    this.transmission = new Transmission@@();
     this.breakingSystem = new BreakingSystem();
-    this.maintenanceRecords = new ArrayList<>();
+  }
+
+  public long getId() {
+    return id;
   }
 
   public void setId(long id) {
     this.id = id;
   }
 
+  public String getLicensePlate() {
+    return licensePlate;
+  }
+
   public void setLicensePlate(String licensePlate) {
     this.licensePlate = licensePlate;
+  }
+
+  public String getMake() {
+    return make;
+  }
+
+  public void setMake(String make) {
+    this.make = make;
+  }
+
+  public String getModel() {
+    return model;
   }
 
   public void setModel(String model) {
     this.model = model;
   }
 
+  public int getYear() {
+    return year;
+  }
+
   public void setYear(int year) {
     this.year = year;
+  }
+
+  public Driver getDriver() {
+    return driver;
   }
 
   void setDriver(Driver driver) {
     this.driver = driver;
   }
 
+  public List<MaintenanceRecord> getMaintenanceRecords() {
+    return maintenanceRecords;
+  }
+
   public void setMaintenanceRecords(List<MaintenanceRecord> maintenanceRecords) {
     this.maintenanceRecords = maintenanceRecords;
   }
 
-  @Override
-  public void registerMaintenance(MaintenanceRecord maintenanceRecord) {
-    // TODO Auto-generated method stub
-
+  public Engine getEngine() {
+    return engine;
   }
 
-  @Override
-  public String generateReport() {
-    // TODO Auto-generated method stub
-    return null;
+  public Transmission getTransmission() {
+    return transmission;
   }
 
-  @Override
-  public void assignDriver(Driver driver) {
-    // TODO Auto-generated method stub
-
+  public BreakingSystem getBreakingSystem() {
+    return breakingSystem;
   }
-
-  @Override
-  public void releaseDriver() {
-    // TODO Auto-generated method stub
-
-  }
-
-  @Override
-  public double calculateDepreciation() {
-    // TODO Auto-generated method stub
-    return 0;
-  }
-
-  public abstract void calculateOperatingCost();
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/Transmission#

@@ -1,8 +1,8 @@
 package com.huerta.fleetmanagementsystem.model.fleet;
 
-import java.sql.Driver;
 import java.util.List;
 
+import com.huerta.fleetmanagementsystem.model.person.Driver;
 import com.huerta.fleetmanagementsystem.model.vehicle.Vehicle;
 
 public class Fleet {

@@ -28,4 +28,10 @@ public class Car extends Vehicle {
   public void setPowerSource(String powerSource) {
     this.powerSource = powerSource;
   }
+
+  @Override
+  public void calculateOperatingCost() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+  }
 }

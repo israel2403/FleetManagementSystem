@@ -7,6 +7,9 @@ public class Transmission {
 
   TransmissionType transmissionType;
 
+  public Transmission() {
+  }
+
   public Transmission(int numberOfGears, TransmissionType transmissionType) {
     this.numberOfGears = numberOfGears;
     this.transmissionType = transmissionType;

@@ -7,6 +7,9 @@ public class Engine {
 
   private String horsepower;
 
+  public Engine() {
+  }
+
   public Engine(String engineType, String displacement, String horsepower) {
     this.engineType = engineType;
     this.displacement = displacement;
