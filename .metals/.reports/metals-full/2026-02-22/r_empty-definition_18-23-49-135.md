@@ -1,3 +1,14 @@
+error id: file://<HOME>/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Bus.java:java/lang/Override#
+file://<HOME>/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Bus.java
+empty definition using pc, found symbol in pc: java/lang/Override#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 883
+uri: file://<HOME>/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Bus.java
+text:
+```scala
 package com.huerta.fleetmanagementsystem.model.vehicle;
 
 import com.huerta.fleetmanagementsystem.model.enums.ServiceType;
@@ -31,31 +42,16 @@ public class Bus extends Vehicle {
     this.serviceType = serviceType;
   }
 
-  @Override
+  @O@@verride
   public double calculateOperatingCost() {
-
-    double baseCost = 150.0;
-
-    double mileageFactor = getMileage() * 0.025;
-
-    double passengerFactor = this.passengerCapacity * 4.0;
-
-    double serviceFactor;
-    if (this.serviceType != null) {
-      switch (this.serviceType) {
-        case CITY:
-          serviceFactor = 40.0;
-          break;
-        case INTERCITY:
-          serviceFactor = 70.0;
-          break;
-        default:
-          serviceFactor = 50.0;
-      }
-    } else {
-      serviceFactor = 50.0;
-    }
-
-    return baseCost + mileageFactor + passengerFactor + serviceFactor;
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
   }
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: java/lang/Override#

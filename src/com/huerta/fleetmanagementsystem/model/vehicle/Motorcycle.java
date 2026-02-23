@@ -5,8 +5,8 @@ public class Motorcycle extends Vehicle {
   private int engineDisplacement;
 
   public Motorcycle(long id, String licensePlate, String make, String model, int year,
-      int engineDisplacement) {
-    super(id, licensePlate, make, model, year);
+      int engineDisplacement, double mileage) {
+    super(id, licensePlate, make, model, year, mileage);
     this.engineDisplacement = engineDisplacement;
   }
 
@@ -20,7 +20,13 @@ public class Motorcycle extends Vehicle {
 
   @Override
   public double calculateOperatingCost() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+
+    double baseCost = 60.0;
+
+    double mileageFactor = getMileage() * 0.015;
+
+    double displacementFactor = this.engineDisplacement * 0.05;
+
+    return baseCost + mileageFactor + displacementFactor;
   }
 }

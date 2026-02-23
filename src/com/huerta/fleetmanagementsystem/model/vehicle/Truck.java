@@ -7,8 +7,8 @@ public class Truck extends Vehicle {
   private int axleCount;
 
   public Truck(long id, String licensePlate, String make, String model, int year, int payloadCapacity,
-      int axleCount) {
-    super(id, licensePlate, make, model, year);
+      int axleCount, double mileage) {
+    super(id, licensePlate, make, model, year, mileage);
     this.payloadCapacity = payloadCapacity;
     this.axleCount = axleCount;
   }
@@ -31,7 +31,15 @@ public class Truck extends Vehicle {
 
   @Override
   public double calculateOperatingCost() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+
+    double baseCost = 200.0;
+
+    double mileageFactor = getMileage() * 0.03;
+
+    double payloadFactor = this.payloadCapacity * 2.5;
+
+    double axleFactor = this.axleCount * 30.0;
+
+    return baseCost + mileageFactor + payloadFactor + axleFactor;
   }
 }

@@ -17,12 +17,16 @@ import lombok.Getter;
 
 @Getter
 public abstract class Vehicle implements Assignable, Calculable, Maintainable, Reportable {
+  private static final double MILEAGE_BLOCK_KM = 10000.0;
+  private static final double DEPRECIATION_PER_MILEAGE_BLOCK = 0.01;
 
   private long id;
   private String licensePlate;
   private String make;
   private String model;
   private int year;
+  private double mileage;
+  private double purchasePrice;
 
   private Driver driver;
   private List<MaintenanceRecord> maintenanceRecords;
@@ -33,12 +37,13 @@ public abstract class Vehicle implements Assignable, Calculable, Maintainable, R
   public Vehicle() {
   }
 
-  public Vehicle(long id, String licensePlate, String make, String model, int year) {
+  public Vehicle(long id, String licensePlate, String make, String model, int year, double mileage) {
     this.id = id;
     this.licensePlate = licensePlate;
     this.make = make;
     this.model = model;
     this.year = year;
+    this.mileage = mileage;
     this.engine = new Engine();
     this.transmission = new Transmission();
     this.breakingSystem = new BreakingSystem();
@@ -61,42 +66,61 @@ public abstract class Vehicle implements Assignable, Calculable, Maintainable, R
     this.year = year;
   }
 
-  void setDriver(Driver driver) {
-    this.driver = driver;
-  }
-
-  public void setMaintenanceRecords(List<MaintenanceRecord> maintenanceRecords) {
-    this.maintenanceRecords = maintenanceRecords;
-  }
-
   @Override
   public void registerMaintenance(MaintenanceRecord maintenanceRecord) {
-    // TODO Auto-generated method stub
-
+    if (maintenanceRecord != null) {
+      this.maintenanceRecords.add(maintenanceRecord);
+    }
   }
 
   @Override
   public String generateReport() {
-    // TODO Auto-generated method stub
-    return null;
+    String driverName = "No Driver";
+    if (this.driver != null && this.driver.getFullName() != null && !this.driver.getFullName().isBlank()) {
+      driverName = this.driver.getFullName();
+    }
+
+    return String.format(
+        "Vehicle Report%nLicense Plate: %s%nMake: %s%nModel: %s%nYear: %d%nDriver: %s",
+        this.licensePlate,
+        this.make,
+        this.model,
+        this.year,
+        driverName);
   }
 
   @Override
   public void assignDriver(Driver driver) {
-    // TODO Auto-generated method stub
+    if (driver != null) {
+      this.driver = driver;
+    }
 
   }
 
   @Override
   public void releaseDriver() {
-    // TODO Auto-generated method stub
+    if (this.driver == null) {
+      return;
+    }
+    this.driver = null;
 
   }
 
   @Override
   public double calculateDepreciation() {
-    // TODO Auto-generated method stub
-    return 0;
+    // based depreciation 10% per year
+    // plus 1% per 10,000 km
+
+    int currentYear = java.time.Year.now().getValue();
+    int age = currentYear - this.year;
+
+    double ageDepreciation = age * 0.10; // 10% per year
+    double mileageDepreciation = (this.mileage / MILEAGE_BLOCK_KM) * DEPRECIATION_PER_MILEAGE_BLOCK; // 1% per 10k km
+
+    double totalDepreciation = ageDepreciation + mileageDepreciation;
+
+    // Cap at 90%
+    return Math.min(totalDepreciation, 0.90);
   }
 
   public abstract double calculateOperatingCost();
