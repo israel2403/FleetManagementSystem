@@ -1,0 +1,157 @@
+@startuml gui_class_diagram
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+skinparam nodesep 60
+skinparam ranksep 60
+
+' ============================================================
+'  External Swing classes (shown for inheritance context only)
+' ============================================================
+class JFrame <<javax.swing>> {
+}
+class JPanel <<javax.swing>> {
+}
+
+' ============================================================
+'  gui package
+' ============================================================
+package "gui" {
+
+  class MainWindow {
+    - fleetService : FleetService
+    --
+    + MainWindow()
+    - loadSampleData() : void
+  }
+
+  class VehiclePanel {
+    - service : FleetService
+    - tableModel : DefaultTableModel
+    - table : JTable
+    - typeBox : JComboBox<String>
+    - cardLayout : CardLayout
+    - specificFieldsPanel : JPanel
+    --
+    + VehiclePanel(service : FleetService)
+    - addVehicle() : void
+    - refreshTable() : void
+  }
+
+  class DriverPanel {
+    - service : FleetService
+    - tableModel : DefaultTableModel
+    - table : JTable
+    --
+    + DriverPanel(service : FleetService)
+    - refreshTable() : void
+  }
+
+  class AssignmentPanel {
+    - service : FleetService
+    - tableModel : DefaultTableModel
+    - vehicleBox : JComboBox<Vehicle>
+    - driverBox : JComboBox<Driver>
+    --
+    + AssignmentPanel(service : FleetService)
+    - refreshAll() : void
+    - refreshComboBoxes() : void
+    - refreshTable() : void
+  }
+
+  class MaintenancePanel {
+    - service : FleetService
+    --
+    + MaintenancePanel(service : FleetService)
+    - refreshVehicleBox(vehicleBox : JComboBox<Vehicle>) : void
+  }
+}
+
+' ============================================================
+'  service package
+' ============================================================
+package "service" {
+
+  class FleetService <<record>> {
+    - fleet : Fleet
+    --
+    + FleetService(fleet : Fleet)
+    + fleet() : Fleet
+    + vehicles() : List<Vehicle>
+    + drivers() : List<Driver>
+    + addVehicle(v : Vehicle) : void
+    + addDriver(d : Driver) : void
+    + assignDriver(v : Vehicle, d : Driver) : void
+    + addMaintenance(v : Vehicle, r : MaintenanceRecord) : void
+    + totalOperatingCost() : double
+  }
+}
+
+' ============================================================
+'  model.fleet package
+' ============================================================
+package "model.fleet" {
+
+  class Fleet {
+    - vehicles : List<Vehicle>
+    - drivers : List<Driver>
+    --
+    + Fleet()
+    + Fleet(vehicles : List<Vehicle>, drivers : List<Driver>)
+    + getVehicles() : List<Vehicle>
+    + getDrivers() : List<Driver>
+    + addVehicle(vehicle : Vehicle) : void
+    + removeVehicle(vehicle : Vehicle) : boolean
+    + addDriver(driver : Driver) : void
+    + removeDriver(driver : Driver) : boolean
+    + assignDriverToVehicle(driver : Driver, vehicle : Vehicle) : void
+    + releaseDriverFromVehicle(vehicle : Vehicle) : void
+    + registerMaintenance(vehicle : Vehicle, record : MaintenanceRecord) : void
+    + calculateTotalOperatingCost() : double
+    + generateFleetReports() : List<String>
+    + getVehicleSpecificDetails() : List<String>
+    + getVehiclesRequiringCommercialLicense() : List<Vehicle>
+  }
+}
+
+' ============================================================
+'  Referenced model classes (minimal, for association targets)
+' ============================================================
+package "model" {
+  abstract class Vehicle {
+  }
+  class Driver {
+  }
+}
+
+' ============================================================
+'  Inheritance
+' ============================================================
+MainWindow --|> JFrame
+VehiclePanel --|> JPanel
+DriverPanel --|> JPanel
+AssignmentPanel --|> JPanel
+MaintenancePanel --|> JPanel
+
+' ============================================================
+'  Composition  (filled diamond ◆)
+'  The whole creates and owns the part; part dies with whole.
+' ============================================================
+MainWindow *-down- "1" FleetService : creates & owns  >
+MainWindow *-down- "1" VehiclePanel : creates >
+MainWindow *-down- "1" DriverPanel : creates >
+MainWindow *-down- "1" AssignmentPanel : creates >
+MainWindow *-down- "1" MaintenancePanel : creates >
+FleetService *-down- "1" Fleet : owns >
+Fleet *-down- "*" Vehicle : contains >
+Fleet *-down- "*" Driver : contains >
+
+' ============================================================
+'  Aggregation  (empty diamond ◇)
+'  The panels share a reference to FleetService; they do not own it.
+' ============================================================
+VehiclePanel o-right- "1" FleetService : uses >
+DriverPanel o-right- "1" FleetService : uses >
+AssignmentPanel o-right- "1" FleetService : uses >
+MaintenancePanel o-right- "1" FleetService : uses >
+
+@enduml

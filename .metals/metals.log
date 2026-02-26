@@ -9712,3 +9712,806 @@ WARNING: Unmatched cancel notification for request id 824
 2026.02.22 18:23:49 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Bus.java. Using fallback presentation compiler.[0m
 Feb 22, 2026 6:24:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2026.02.23 17:19:38 INFO  Started: Metals version 1.6.5 in folders '/home/isra/Proyectos/master/tech web/FleetManagementSystem' for client Visual Studio Code 1.109.2.[0m
+2026.02.23 17:19:38 INFO  Memory monitor started[0m
+2026.02.23 17:19:40 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2026.02.23 17:19:40 WARN  no build tool detected in workspace '/home/isra/Proyectos/master/tech web/FleetManagementSystem'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2026.02.23 17:19:40 WARN  Build server is not auto-connectable.[0m
+2026.02.23 17:19:40 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/interfaces/Calculable.java[0m
+2026.02.23 17:19:40 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/interfaces/Maintainable.java[0m
+2026.02.23 17:19:40 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Truck.java[0m
+2026.02.23 17:19:40 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/enums/BreakeType.java[0m
+2026.02.23 17:19:40 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java[0m
+2026.02.23 17:19:40 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java[0m
+2026.02.23 17:19:40 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Bus.java[0m
+2026.02.23 17:19:40 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java[0m
+2026.02.23 17:19:40 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java[0m
+2026.02.23 17:19:41 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java. Output:
+[0m
+2026.02.23 17:19:41 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/interfaces/Calculable.java. Output:
+[0m
+2026.02.23 17:19:41 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/interfaces/Maintainable.java. Output:
+[0m
+2026.02.23 17:19:41 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/enums/BreakeType.java. Output:
+[0m
+2026.02.23 17:19:41 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Output:
+[0m
+2026.02.23 17:19:41 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java. Output:
+[0m
+2026.02.23 17:19:41 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Bus.java. Output:
+[0m
+2026.02.23 17:19:42 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Output:
+[0m
+2026.02.23 17:19:42 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Truck.java. Output:
+[0m
+2026.02.23 17:19:43 INFO  restarted 0 presentation compilers[0m
+2026.02.23 17:22:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/interfaces/Calculable.java. Using fallback presentation compiler.[0m
+2026.02.23 17:22:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/interfaces/Maintainable.java. Using fallback presentation compiler.[0m
+2026.02.23 17:22:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:22:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/enums/BreakeType.java. Using fallback presentation compiler.[0m
+2026.02.23 17:22:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java. Using fallback presentation compiler.[0m
+2026.02.23 17:22:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Bus.java. Using fallback presentation compiler.[0m
+2026.02.23 17:22:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.23 17:22:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Truck.java. Using fallback presentation compiler.[0m
+2026.02.23 17:22:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java. Using fallback presentation compiler.[0m
+2026.02.23 17:30:48 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java[0m
+2026.02.23 17:30:48 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:30:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:30:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:30:51 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:30:51 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:30:53 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:30:53 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:30:58 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:30:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:30:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:31:00 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:30:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:30:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:31:00 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:31:00 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java[0m
+2026.02.23 17:31:00 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:31:00 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:31:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:31:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:34:17 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:34:17 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:34:17 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:34:17 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:37:02 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:37:02 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java[0m
+2026.02.23 17:37:02 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:37:11 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:37:11 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:42 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java[0m
+2026.02.23 17:42:42 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Output:
+[0m
+2026.02.23 17:42:42 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:42 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:42 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:43 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:43 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:54 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:54 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+Feb 23, 2026 5:42:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 173
+2026.02.23 17:42:54 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:57 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:58 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:58 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Output:
+[0m
+2026.02.23 17:42:58 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:58 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:58 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Output:
+[0m
+2026.02.23 17:42:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:59 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Output:
+[0m
+2026.02.23 17:42:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:42:59 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Output:
+[0m
+2026.02.23 17:43:00 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:00 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:00 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java[0m
+2026.02.23 17:43:00 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:18 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Output:
+[0m
+2026.02.23 17:43:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:19 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java[0m
+2026.02.23 17:43:19 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Output:
+[0m
+2026.02.23 17:43:19 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:21 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java[0m
+2026.02.23 17:43:21 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Output:
+[0m
+2026.02.23 17:43:21 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:24 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:25 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:25 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:25 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:25 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java[0m
+2026.02.23 17:43:25 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Output:
+[0m
+2026.02.23 17:43:25 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:34 INFO  Created report: Optional[file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java][0m
+2026.02.23 17:43:34 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/isra/Proyectos/master/tech web/FleetManagementSystem/.metals/.reports/metals-full/2026-02-23/r_empty-definition_17-43-34-216.md")[0m
+2026.02.23 17:43:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:34 INFO  Created report: Optional[file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java][0m
+2026.02.23 17:43:34 INFO  empty definition using pc, found symbol in pc: _empty_/Fleet# (full report at: "/home/isra/Proyectos/master/tech web/FleetManagementSystem/.metals/.reports/metals-full/2026-02-23/r_empty-definition_17-43-34-679.md")[0m
+2026.02.23 17:43:34 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java[0m
+2026.02.23 17:43:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:36 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:36 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:36 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:37 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:43:37 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:37 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:38 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:43:37 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:37 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:37 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:38 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:39 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:43:38 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:38 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:39 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:43:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:41 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:41 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:43:41 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:41 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:43:41 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:41 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:42 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java[0m
+2026.02.23 17:43:42 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:42 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:43:42 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java[0m
+2026.02.23 17:43:42 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:13 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java[0m
+2026.02.23 17:44:13 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:13 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:13 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:24 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:24 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:24 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:27 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:27 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:27 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:27 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:27 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:27 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:28 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Output:
+[0m
+2026.02.23 17:44:28 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:28 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:29 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:29 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Output:
+[0m
+2026.02.23 17:44:29 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:44 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:45 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java[0m
+2026.02.23 17:44:45 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Output:
+[0m
+2026.02.23 17:44:44 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:45 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:46 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java[0m
+2026.02.23 17:44:45 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:46 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:54 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:54 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:54 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:54 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:54 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:56 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:44:56 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:44:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+Feb 23, 2026 5:44:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 405
+2026.02.23 17:44:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:09 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:09 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:09 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:09 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:10 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:45:11 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:11 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java[0m
+2026.02.23 17:45:11 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:11 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:11 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:12 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:45:12 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:13 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java[0m
+2026.02.23 17:45:12 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:13 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java[0m
+2026.02.23 17:45:13 INFO  Created report: Optional[file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java][0m
+2026.02.23 17:45:13 INFO  QDox parse error in file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java (full report at: "/home/isra/Proyectos/master/tech web/FleetManagementSystem/.metals/.reports/metals-full/2026-02-23/r_qdox-error_17-45-13-675.md")[0m
+Feb 23, 2026 5:45:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 449
+2026.02.23 17:45:14 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:16 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:16 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:19 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:19 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:29 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:29 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:29 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:44 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:44 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Output:
+[0m
+2026.02.23 17:45:44 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:44 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:44 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:44 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java[0m
+2026.02.23 17:45:44 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Output:
+[0m
+2026.02.23 17:45:45 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:45 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:58 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:58 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java[0m
+2026.02.23 17:45:58 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:45:58 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:01 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:01 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Output:
+[0m
+2026.02.23 17:46:01 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:01 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java[0m
+2026.02.23 17:46:10 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:18 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java[0m
+2026.02.23 17:46:18 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Output:
+[0m
+2026.02.23 17:46:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:21 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:27 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:27 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:27 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:28 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java[0m
+2026.02.23 17:46:27 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:28 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Output:
+[0m
+2026.02.23 17:46:27 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:28 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:49 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java[0m
+2026.02.23 17:46:49 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Output:
+[0m
+2026.02.23 17:46:49 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:49 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:50 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:50 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:50 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:51 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:52 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Output:
+[0m
+2026.02.23 17:46:51 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:51 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:51 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:46:52 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java[0m
+2026.02.23 17:46:52 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Output:
+[0m
+2026.02.23 17:46:51 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:05 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java[0m
+2026.02.23 17:47:05 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java. Output:
+[0m
+2026.02.23 17:47:05 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:05 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:07 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:07 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:07 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:07 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:08 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java[0m
+2026.02.23 17:47:08 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java. Output:
+[0m
+2026.02.23 17:47:08 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:17 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java[0m
+2026.02.23 17:47:17 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Output:
+[0m
+2026.02.23 17:47:17 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:17 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:20 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:20 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:20 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:20 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:20 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java[0m
+2026.02.23 17:47:20 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Output:
+[0m
+2026.02.23 17:47:20 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:28 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java[0m
+2026.02.23 17:47:28 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:28 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:28 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:28 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+Feb 23, 2026 5:47:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 625
+2026.02.23 17:47:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+Feb 23, 2026 5:47:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 627
+2026.02.23 17:47:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:45 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:45 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:47 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:47 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:51 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:47:51 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:48:02 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:48:02 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:48:04 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:48:04 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Output:
+[0m
+2026.02.23 17:48:04 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:48:04 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:48:07 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:48:07 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Output:
+[0m
+2026.02.23 17:48:07 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:48:07 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:49:05 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:49:05 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:49:11 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:49:11 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:49:12 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:49:12 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:49:13 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:49:13 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:49:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 17:49:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.23 18:02:56 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java[0m
+2026.02.23 18:02:56 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Output:
+[0m
+2026.02.23 18:02:56 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:03:00 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:03:00 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:03:00 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:03:00 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java[0m
+2026.02.23 18:03:00 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Output:
+[0m
+2026.02.23 18:03:00 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:06:36 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:06:48 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java[0m
+2026.02.23 18:06:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 18:06:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 18:17:09 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 18:17:16 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java[0m
+2026.02.23 18:17:16 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:17:16 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:17:17 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:17:17 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:17:17 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:17:17 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+Feb 23, 2026 6:17:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 758
+2026.02.23 18:17:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:17:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:17:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:17:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:17:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:17:18 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:37:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.23 18:37:58 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/component/BreakingSystem.java. Using fallback presentation compiler.[0m
+2026.02.23 18:38:22 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.23 18:38:22 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.23 18:38:45 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 18:38:45 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java. Using fallback presentation compiler.[0m
+2026.02.23 18:39:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:39:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:39:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:39:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:39:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:39:44 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:39:44 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:39:44 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:39:44 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:50:54 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.23 18:51:56 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.23 18:51:56 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+Feb 23, 2026 6:51:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 781
+2026.02.23 18:54:51 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java[0m
+2026.02.23 18:54:51 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.23 18:54:51 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Output:
+[0m
+2026.02.23 18:54:52 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.23 18:54:52 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.23 18:54:54 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.23 18:54:54 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.23 18:54:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.23 18:54:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+Feb 23, 2026 6:54:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 797
+2026.02.23 18:55:10 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.23 18:55:10 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:07 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:07 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+Feb 24, 2026 4:51:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 839
+2026.02.24 04:51:08 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:08 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:12 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:12 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:16 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:16 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:19 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java[0m
+2026.02.24 04:51:19 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 04:51:38 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java[0m
+2026.02.24 04:51:38 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 09:58:42 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 18:17:07 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java[0m
+2026.02.24 18:17:07 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+Feb 24, 2026 6:17:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "class:/home/isra/Proyectos/master/tech%20web/FleetManagementSystem/bin/com/huerta/fleetmanagementsystem/gui/DriverPanel%241.class"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "class" not installed
+	at java.base/java.nio.file.Path.of(Path.java:213)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:808)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Feb 24, 2026 6:17:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "class:/home/isra/Proyectos/master/tech%20web/FleetManagementSystem/bin/com/huerta/fleetmanagementsystem/gui/DriverPanel%241.class"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "class" not installed
+	at java.base/java.nio.file.Path.of(Path.java:213)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:808)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2026.02.24 18:17:13 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java[0m
+2026.02.24 18:17:13 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 18:17:13 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+Feb 24, 2026 6:18:10 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2026.02.24 19:51:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 19:51:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 19:51:48 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/HeavyVehicle.java[0m
+2026.02.24 19:51:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/HeavyVehicle.java. Using fallback presentation compiler.[0m
+Feb 24, 2026 7:51:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 916
+2026.02.24 19:51:48 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/HeavyVehicle.java. Output:
+[0m
+2026.02.24 19:51:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/HeavyVehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:51:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/HeavyVehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:51:49 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/HeavyVehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:51:53 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java[0m
+2026.02.24 19:51:53 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:51:53 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java. Output:
+[0m
+2026.02.24 19:51:53 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:51:53 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:51:56 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:51:56 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:08 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Truck.java[0m
+2026.02.24 19:52:08 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Truck.java. Output:
+[0m
+2026.02.24 19:52:08 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Truck.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:08 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Truck.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:10 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Truck.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:10 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Truck.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:19 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/HeavyVehicle.java[0m
+2026.02.24 19:52:19 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/HeavyVehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:19 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/HeavyVehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:26 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/person/Driver.java[0m
+2026.02.24 19:52:26 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/person/Driver.java. Output:
+[0m
+2026.02.24 19:52:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/person/Driver.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/person/Driver.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/person/Driver.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:34 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java[0m
+2026.02.24 19:52:34 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:38 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:38 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Motorcycle.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:42 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/person/Driver.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:42 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/maintenance/MaintenanceRecord.java[0m
+2026.02.24 19:52:42 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/maintenance/MaintenanceRecord.java. Output:
+[0m
+2026.02.24 19:52:42 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/maintenance/MaintenanceRecord.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:42 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/maintenance/MaintenanceRecord.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:52 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java[0m
+2026.02.24 19:52:52 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:52 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:53 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Output:
+[0m
+2026.02.24 19:52:56 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:56 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:57 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.24 19:52:57 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.24 20:05:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.24 20:05:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.24 20:05:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.24 20:05:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.24 20:05:41 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/service/FleetService.java. Using fallback presentation compiler.[0m
+2026.02.24 20:05:48 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java[0m
+2026.02.24 20:05:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 20:05:48 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java. Output:
+[0m
+2026.02.24 20:05:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 20:05:50 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 20:05:50 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 20:05:53 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 20:05:53 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 20:07:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 20:07:33 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java[0m
+2026.02.24 20:07:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:07:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:08:36 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java[0m
+2026.02.24 20:08:36 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:08:36 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:08:36 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Output:
+[0m
+2026.02.24 20:08:46 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:08:46 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:08:46 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:08:46 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:08:51 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:08:51 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:08:59 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java[0m
+2026.02.24 20:08:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:08:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:01 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:01 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:01 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:01 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:02 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:05 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:05 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:15 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:23 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:23 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:25 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java[0m
+2026.02.24 20:09:25 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:25 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:27 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:27 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java[0m
+2026.02.24 20:09:29 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:29 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java[0m
+2026.02.24 20:09:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:38 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:38 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:38 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:38 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:38 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:41 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:41 INFO  Created report: Optional[file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java][0m
+2026.02.24 20:09:41 INFO  empty definition using pc, found symbol in pc: java/awt/CardLayout# (full report at: "/home/isra/Proyectos/master/tech web/FleetManagementSystem/.metals/.reports/metals-full/2026-02-24/r_empty-definition_20-09-41-064.md")[0m
+2026.02.24 20:09:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:40 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:43 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:09:43 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+Feb 24, 2026 8:09:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1196
+2026.02.24 20:11:21 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Car.java. Using fallback presentation compiler.[0m
+2026.02.24 20:11:21 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:11:21 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:11:21 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/maintenance/MaintenanceRecord.java. Using fallback presentation compiler.[0m
+2026.02.24 20:11:21 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Output:
+[0m
+2026.02.24 20:11:35 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java. Using fallback presentation compiler.[0m
+2026.02.24 20:12:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:12:31 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java[0m
+2026.02.24 20:12:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:07 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java[0m
+2026.02.24 20:15:07 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:08 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Output:
+[0m
+2026.02.24 20:15:07 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:09 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:09 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:09 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:09 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Output:
+[0m
+2026.02.24 20:15:09 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:10 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:10 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:10 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Output:
+[0m
+2026.02.24 20:15:10 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:11 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:11 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:11 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Output:
+[0m
+2026.02.24 20:15:11 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:11 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:12 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Output:
+[0m
+2026.02.24 20:15:15 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:20 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:20 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:28 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:28 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:29 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:29 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:29 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+Feb 24, 2026 8:15:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1269
+2026.02.24 20:15:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+Feb 24, 2026 8:15:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1271
+2026.02.24 20:15:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:31 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+Feb 24, 2026 8:15:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1276
+2026.02.24 20:15:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:15:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:16:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/model/vehicle/Vehicle.java. Using fallback presentation compiler.[0m
+2026.02.24 20:27:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:27:30 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java[0m
+2026.02.24 20:27:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:28:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:28:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+Feb 24, 2026 8:28:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1311
+2026.02.24 20:28:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:28:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+Feb 24, 2026 8:28:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1313
+2026.02.24 20:31:59 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 20:36:47 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:26 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:26 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java[0m
+2026.02.24 20:51:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:30 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:32 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java[0m
+2026.02.24 20:51:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:32 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:33 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+Feb 24, 2026 8:51:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1349
+2026.02.24 20:51:35 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:35 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:35 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:35 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:35 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:37 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:37 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:39 INFO  Created report: Optional[file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java][0m
+2026.02.24 20:51:39 INFO  empty definition using pc, found symbol in pc: _empty_/MainWindow# (full report at: "/home/isra/Proyectos/master/tech web/FleetManagementSystem/.metals/.reports/metals-full/2026-02-24/r_empty-definition_20-51-39-710.md")[0m
+2026.02.24 20:51:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:39 INFO  empty definition using pc, found symbol in pc: _empty_/MainWindow# (full report at: "/home/isra/Proyectos/master/tech web/FleetManagementSystem/.metals/.reports/metals-full/2026-02-24/r_empty-definition_20-51-39-710.md")[0m
+2026.02.24 20:51:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:39 INFO  Created report: Optional[file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java][0m
+2026.02.24 20:51:39 INFO  empty definition using pc, found symbol in pc: _empty_/MainWindow#setVisible# (full report at: "/home/isra/Proyectos/master/tech web/FleetManagementSystem/.metals/.reports/metals-full/2026-02-24/r_empty-definition_20-51-39-936.md")[0m
+2026.02.24 20:51:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:39 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:41 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:41 INFO  empty definition using pc, found symbol in pc: _empty_/MainWindow# (full report at: "/home/isra/Proyectos/master/tech web/FleetManagementSystem/.metals/.reports/metals-full/2026-02-24/r_empty-definition_20-51-39-710.md")[0m
+2026.02.24 20:51:41 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/app/FleetManagementApplication.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:41 INFO  empty definition using pc, found symbol in pc: _empty_/MainWindow# (full report at: "/home/isra/Proyectos/master/tech web/FleetManagementSystem/.metals/.reports/metals-full/2026-02-24/r_empty-definition_20-51-39-710.md")[0m
+2026.02.24 20:51:41 WARN  no build target for: /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java[0m
+2026.02.24 20:51:41 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:41 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:42 WARN  Running javac-semanticdb failed for file:///home/isra/Proyectos/master/tech%20web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Output:
+[0m
+2026.02.24 20:51:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m
+2026.02.24 20:51:48 INFO  no build target found for /home/isra/Proyectos/master/tech web/FleetManagementSystem/src/com/huerta/fleetmanagementsystem/gui/MainWindow.java. Using fallback presentation compiler.[0m

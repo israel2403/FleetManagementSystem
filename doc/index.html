@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet Management System — Documentation Index</title>
+  <style>
+    :root { --accent: #2563eb; --bg: #f8fafc; --card: #fff; --border: #e2e8f0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: #1e293b; line-height: 1.6; padding: 2rem; max-width: 960px; margin: auto; }
+    h1 { color: var(--accent); margin-bottom: .5rem; }
+    h2 { margin-top: 2rem; color: #334155; border-bottom: 2px solid var(--accent); padding-bottom: .25rem; }
+    h3 { margin-top: 1.2rem; color: #475569; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: .5rem; padding: 1rem 1.25rem; margin: .75rem 0; }
+    .card ul { list-style: none; padding-left: 0; }
+    .card li { padding: .2rem 0; }
+    .card li::before { content: "• "; color: var(--accent); font-weight: bold; }
+    code { background: #f1f5f9; padding: .15rem .35rem; border-radius: .25rem; font-size: .92em; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .tag { display: inline-block; font-size: .75rem; padding: .1rem .45rem; border-radius: .25rem; margin-left: .35rem; font-weight: 600; vertical-align: middle; }
+    .abs   { background: #dbeafe; color: #1e40af; }
+    .poly  { background: #dcfce7; color: #166534; }
+    .comp  { background: #fef3c7; color: #92400e; }
+    .agg   { background: #fce7f3; color: #9d174d; }
+    .enc   { background: #f3e8ff; color: #6b21a8; }
+    .hier  { background: #e0f2fe; color: #0369a1; }
+    .down  { background: #ffe4e6; color: #9f1239; }
+    .up    { background: #ccfbf1; color: #115e59; }
+    .mod   { background: #e8e8e8; color: #374151; }
+    .legend { display: flex; flex-wrap: wrap; gap: .5rem; margin: .75rem 0; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { text-align: left; padding: .5rem .75rem; border: 1px solid var(--border); }
+    th { background: #f1f5f9; }
+  </style>
+</head>
+<body>
+
+<h1>Fleet Management System</h1>
+<p>Java Swing desktop application for managing a fleet of vehicles, drivers and maintenance records.<br>
+This document serves as an <strong>index to every class</strong>, grouped by package, with references to the
+OOP concepts demonstrated in each.</p>
+
+<!-- ================ LEGEND ================ -->
+<h2>OOP Concept Legend</h2>
+<div class="legend">
+  <span class="tag abs">Abstraction</span>
+  <span class="tag poly">Polymorphism</span>
+  <span class="tag comp">Composition</span>
+  <span class="tag agg">Aggregation</span>
+  <span class="tag enc">Encapsulation</span>
+  <span class="tag hier">Hierarchy</span>
+  <span class="tag down">Downcasting</span>
+  <span class="tag up">Upcasting</span>
+  <span class="tag mod">Modularity</span>
+</div>
+
+<!-- ================ APP ================ -->
+<h2>1. <code>app</code> — Application Entry Point</h2>
+<p>Source: <code>src/com/huerta/fleetmanagementsystem/app/</code></p>
+<div class="card">
+  <ul>
+    <li><code>FleetManagementApplication</code> — bootstraps the Swing GUI on the EDT.
+      <span class="tag mod">Modularity</span></li>
+  </ul>
+</div>
+
+<!-- ================ INTERFACES ================ -->
+<h2>2. <code>interfaces</code> — Behavioural Contracts</h2>
+<p>Source: <code>src/com/huerta/fleetmanagementsystem/interfaces/</code></p>
+<div class="card">
+  <ul>
+    <li><code>Assignable</code> — driver assignment contract.
+      <span class="tag abs">Abstraction</span>
+      <span class="tag poly">Polymorphism</span></li>
+    <li><code>Calculable</code> — depreciation &amp; operating-cost contract.
+      <span class="tag abs">Abstraction</span>
+      <span class="tag poly">Polymorphism</span></li>
+    <li><code>Maintainable</code> — maintenance-tracking contract.
+      <span class="tag abs">Abstraction</span>
+      <span class="tag mod">Modularity</span></li>
+    <li><code>Reportable</code> — report-generation contract.
+      <span class="tag abs">Abstraction</span>
+      <span class="tag poly">Polymorphism</span></li>
+  </ul>
+</div>
+
+<!-- ================ ENUMS ================ -->
+<h2>3. <code>model.enums</code> — Enumerated Types</h2>
+<p>Source: <code>src/com/huerta/fleetmanagementsystem/model/enums/</code></p>
+<div class="card">
+  <ul>
+    <li><code>BreakeType</code> — DISC, DRUM</li>
+    <li><code>FuelType</code> — GASOLINE, DIESEL, ELECTRIC, HYBRID</li>
+    <li><code>MaintenanceType</code> — PREVENTIVE, CORRECTIVE</li>
+    <li><code>ServiceType</code> — CITY, INTERCITY</li>
+    <li><code>TransmissionType</code> — MANUAL, AUTOMATIC</li>
+  </ul>
+</div>
+
+<!-- ================ COMPONENTS ================ -->
+<h2>4. <code>model.component</code> — Vehicle Components</h2>
+<p>Source: <code>src/com/huerta/fleetmanagementsystem/model/component/</code></p>
+<div class="card">
+  <ul>
+    <li><code>Engine</code> — engine type, displacement, horsepower.
+      <span class="tag comp">Composition</span>
+      <span class="tag enc">Encapsulation</span></li>
+    <li><code>Transmission</code> — gear count, transmission type.
+      <span class="tag comp">Composition</span>
+      <span class="tag enc">Encapsulation</span></li>
+    <li><code>BreakingSystem</code> — brake type, status.
+      <span class="tag comp">Composition</span>
+      <span class="tag enc">Encapsulation</span></li>
+  </ul>
+</div>
+
+<!-- ================ PERSON ================ -->
+<h2>5. <code>model.person</code> — People</h2>
+<p>Source: <code>src/com/huerta/fleetmanagementsystem/model/person/</code></p>
+<div class="card">
+  <ul>
+    <li><code>Driver</code> — name, licence, experience.
+      <span class="tag enc">Encapsulation</span>
+      <span class="tag agg">Aggregation</span></li>
+  </ul>
+</div>
+
+<!-- ================ MAINTENANCE ================ -->
+<h2>6. <code>model.maintenance</code> — Maintenance</h2>
+<p>Source: <code>src/com/huerta/fleetmanagementsystem/model/maintenance/</code></p>
+<div class="card">
+  <ul>
+    <li><code>MaintenanceRecord</code> — date, type, description, cost.
+      <span class="tag enc">Encapsulation</span>
+      <span class="tag agg">Aggregation</span></li>
+  </ul>
+</div>
+
+<!-- ================ VEHICLE HIERARCHY ================ -->
+<h2>7. <code>model.vehicle</code> — Vehicle Hierarchy</h2>
+<p>Source: <code>src/com/huerta/fleetmanagementsystem/model/vehicle/</code></p>
+
+<h3>Inheritance Tree</h3>
+<pre style="background:#f1f5f9;padding:1rem;border-radius:.5rem;overflow-x:auto;">
+Vehicle  (abstract)
+├── Car
+├── Motorcycle
+└── HeavyVehicle  (abstract)
+    ├── Truck
+    └── Bus
+</pre>
+
+<div class="card">
+  <ul>
+    <li><code>Vehicle</code> — abstract base; defines common fields, owns components.
+      <span class="tag abs">Abstraction</span>
+      <span class="tag hier">Hierarchy</span>
+      <span class="tag poly">Polymorphism</span>
+      <span class="tag comp">Composition</span>
+      <span class="tag enc">Encapsulation</span>
+      <span class="tag up">Upcasting</span></li>
+    <li><code>HeavyVehicle</code> — abstract; adds gross weight, commercial-licence check.
+      <span class="tag hier">Hierarchy</span>
+      <span class="tag up">Upcasting</span>
+      <span class="tag down">Downcasting</span></li>
+    <li><code>Car</code> — seats, fuel type; overrides <code>calculateOperatingCost()</code>.
+      <span class="tag hier">Hierarchy</span>
+      <span class="tag poly">Polymorphism</span>
+      <span class="tag up">Upcasting</span></li>
+    <li><code>Truck</code> — payload, axles; overrides <code>calculateOperatingCost()</code>.
+      <span class="tag hier">Hierarchy</span>
+      <span class="tag poly">Polymorphism</span>
+      <span class="tag down">Downcasting</span></li>
+    <li><code>Bus</code> — passengers, service type; overrides <code>calculateOperatingCost()</code>.
+      <span class="tag hier">Hierarchy</span>
+      <span class="tag poly">Polymorphism</span></li>
+    <li><code>Motorcycle</code> — displacement; overrides <code>calculateOperatingCost()</code>.
+      <span class="tag hier">Hierarchy</span>
+      <span class="tag poly">Polymorphism</span></li>
+  </ul>
+</div>
+
+<!-- ================ FLEET ================ -->
+<h2>8. <code>model.fleet</code> — Fleet</h2>
+<p>Source: <code>src/com/huerta/fleetmanagementsystem/model/fleet/</code></p>
+<div class="card">
+  <ul>
+    <li><code>Fleet</code> — manages vehicle/driver collections; demonstrates every concept.
+      <span class="tag agg">Aggregation</span>
+      <span class="tag poly">Polymorphism</span>
+      <span class="tag down">Downcasting</span>
+      <span class="tag up">Upcasting</span>
+      <span class="tag enc">Encapsulation</span></li>
+  </ul>
+</div>
+
+<!-- ================ SERVICE ================ -->
+<h2>9. <code>service</code> — Service Layer</h2>
+<p>Source: <code>src/com/huerta/fleetmanagementsystem/service/</code></p>
+<div class="card">
+  <ul>
+    <li><code>FleetService</code> (record) — façade between GUI and Fleet.
+      <span class="tag mod">Modularity</span>
+      <span class="tag agg">Aggregation</span></li>
+  </ul>
+</div>
+
+<!-- ================ GUI ================ -->
+<h2>10. <code>gui</code> — Graphical User Interface</h2>
+<p>Source: <code>src/com/huerta/fleetmanagementsystem/gui/</code></p>
+<div class="card">
+  <ul>
+    <li><code>MainWindow</code> — JFrame; creates and owns all panels &amp; service.
+      <span class="tag comp">Composition</span>
+      <span class="tag mod">Modularity</span></li>
+    <li><code>VehiclePanel</code> — add/list vehicles, fleet reports, details, commercial licence filter.
+      <span class="tag agg">Aggregation</span>
+      <span class="tag mod">Modularity</span></li>
+    <li><code>DriverPanel</code> — add/list drivers.
+      <span class="tag agg">Aggregation</span></li>
+    <li><code>AssignmentPanel</code> — assign/release drivers.
+      <span class="tag agg">Aggregation</span></li>
+    <li><code>MaintenancePanel</code> — register maintenance records.
+      <span class="tag agg">Aggregation</span></li>
+  </ul>
+</div>
+
+<!-- ================ CONCEPT CROSS-REFERENCE ================ -->
+<h2>OOP Concept Cross-Reference</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Concept</th>
+      <th>Where to Find It</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Abstraction</strong></td>
+        <td><code>Vehicle</code> (abstract class), <code>HeavyVehicle</code> (abstract class), all four interfaces</td></tr>
+    <tr><td><strong>Encapsulation</strong></td>
+        <td>Every model class — private fields + validated setters (see <code>Driver</code>, <code>Vehicle</code>, components)</td></tr>
+    <tr><td><strong>Hierarchy (Inheritance)</strong></td>
+        <td><code>Vehicle → Car/Motorcycle</code>, <code>Vehicle → HeavyVehicle → Truck/Bus</code></td></tr>
+    <tr><td><strong>Polymorphism</strong></td>
+        <td><code>calculateOperatingCost()</code> in each subclass, <code>Fleet.calculateTotalOperatingCost()</code>, <code>Fleet.generateFleetReports()</code></td></tr>
+    <tr><td><strong>Composition</strong></td>
+        <td><code>Vehicle</code> owns <code>Engine</code>, <code>Transmission</code>, <code>BreakingSystem</code>; <code>MainWindow</code> owns panels + service</td></tr>
+    <tr><td><strong>Aggregation</strong></td>
+        <td><code>Fleet</code> ◇→ <code>Vehicle</code>/<code>Driver</code>; panels ◇→ <code>FleetService</code>; <code>FleetService</code> ◇→ <code>Fleet</code></td></tr>
+    <tr><td><strong>Upcasting</strong></td>
+        <td>Any subclass stored as <code>Vehicle</code> (e.g. <code>Fleet.addVehicle(new Car(...))</code>)</td></tr>
+    <tr><td><strong>Downcasting</strong></td>
+        <td><code>Fleet.getVehicleSpecificDetails()</code> and <code>Fleet.getVehiclesRequiringCommercialLicense()</code> — <code>instanceof</code> + explicit cast</td></tr>
+    <tr><td><strong>Modularity</strong></td>
+        <td>Package separation: <code>app → gui → service → model</code>; each panel is a self-contained module</td></tr>
+  </tbody>
+</table>
+
+<hr style="margin-top:2rem">
+<p style="font-size:.85rem;color:#64748b">
+  Generated for the Fleet Management System project.<br>
+  To generate full Javadoc HTML, run:
+  <code>javadoc -d doc/javadoc -sourcepath src -subpackages com.huerta.fleetmanagementsystem</code>
+</p>
+
+</body>
+</html>

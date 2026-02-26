@@ -9,34 +9,400 @@ class FleetManagementApplication {
 ./src/com/huerta/fleetmanagementsystem/gui/DriverPanel.java
 package com.huerta.fleetmanagementsystem.gui;
 
-public class DriverPanel {
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
 
-}
-******************************************************
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
+
+import com.huerta.fleetmanagementsystem.model.person.Driver;
+import com.huerta.fleetmanagementsystem.service.FleetService;
+
+public class DriverPanel extends JPanel {
+
+  private final FleetService service;
+
+  private final DefaultTableModel tableModel;
+  private final JTable table;
+
+  public DriverPanel(FleetService service) {
+    this.service = service;
+
+    setLayout(new BorderLayout(10, 10));
+    setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+    tableModel = new DefaultTableModel(new Object[] { "Full Name", "Years of Experience" }, 0) {
+      @Override
+      public boolean isCellEditable(int row, int column) {
+        return false;
+      }
+    };
+    table = new JTable(tableModel);
+    add(new JScrollPane(table), BorderLayout.CENTER);
+
+    JPanel form = new JPanel(new GridLayout(0, 2, 8, 8));
+    form.setBorder(BorderFactory.createTitledBorder("Add Driver"));
+
+    JTextField nameField = new JTextField();
+    JTextField yearsField = new JTextField();
+
+    form.add(new JLabel("Full Name:"));
+    form.add(nameField);
+    form.add(new JLabel("Years of Experience:"));
+    form.add(yearsField);
+
+    JButton addBtn = new JButton("Add Driver");
+    JButton refreshBtn = new JButton("Refresh");
+
+    JPanel actions = new JPanel();
+    actions.add(addBtn);
+    actions.add(refreshBtn);
+
+    JPanel south = new JPanel(new BorderLayout(10, 10));
+    south.add(form, BorderLayout.CENTER);
+    south.add(actions, BorderLayout.SOUTH);
+    add(south, BorderLayout.SOUTH);
+
+    addBtn.addActionListener(e -> {
+      try {
+        String name = nameField.getText().trim();
+        int years = Integer.parseInt(yearsField.getText().trim());
+
+        service.addDriver(new Driver(name, years));
+        JOptionPane.showMessageDialog(this, "Driver added successfully.");
+        refreshTable();
+      } catch (Exception ex) {
+        JOptionPane.showMessageDialog(this, "Error: " + ex.getMessage(), "Invalid Input", JOptionPane.ERROR_MESSAGE);
+      }
+    });
+
+    refreshBtn.addActionListener(e -> refreshTable());
+
+    refreshTable();
+  }
+
+  private void refreshTable() {
+    tableModel.setRowCount(0);
+    for (Driver d : service.drivers()) {
+      tableModel.addRow(new Object[] { d.getFullName(), d.getYearsOfExperience() });
+    }
+  }
+}******************************************************
 
 ./src/com/huerta/fleetmanagementsystem/gui/MaintenancePanel.java
 package com.huerta.fleetmanagementsystem.gui;
 
-public class MaintenancePanel {
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.time.LocalDate;
 
-}
-******************************************************
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+import com.huerta.fleetmanagementsystem.model.maintenance.MaintenanceRecord;
+import com.huerta.fleetmanagementsystem.model.vehicle.Vehicle;
+import com.huerta.fleetmanagementsystem.service.FleetService;
+
+public class MaintenancePanel extends JPanel {
+
+  private final FleetService service;
+
+  public MaintenancePanel(FleetService service) {
+    this.service = service;
+
+    setLayout(new BorderLayout(10, 10));
+    setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+    JPanel form = new JPanel(new GridLayout(0, 2, 8, 8));
+    form.setBorder(BorderFactory.createTitledBorder("Register Maintenance"));
+
+    JComboBox<Vehicle> vehicleBox = new JComboBox<>();
+    refreshVehicleBox(vehicleBox);
+
+    JTextField dateField = new JTextField("2026-02-23"); // ISO date
+    JTextField typeField = new JTextField();
+    JTextField descField = new JTextField();
+    JTextField costField = new JTextField();
+
+    form.add(new JLabel("Vehicle:"));
+    form.add(vehicleBox);
+    form.add(new JLabel("Date (YYYY-MM-DD):"));
+    form.add(dateField);
+    form.add(new JLabel("Type:"));
+    form.add(typeField);
+    form.add(new JLabel("Description:"));
+    form.add(descField);
+    form.add(new JLabel("Cost:"));
+    form.add(costField);
+
+    JButton addBtn = new JButton("Register Maintenance");
+    JButton refreshBtn = new JButton("Refresh Vehicles");
+
+    JPanel actions = new JPanel();
+    actions.add(addBtn);
+    actions.add(refreshBtn);
+
+    add(form, BorderLayout.CENTER);
+    add(actions, BorderLayout.SOUTH);
+
+    addBtn.addActionListener(e -> {
+      try {
+        Vehicle v = (Vehicle) vehicleBox.getSelectedItem();
+        if (v == null)
+          throw new IllegalStateException("No vehicle available. Add a vehicle first.");
+
+        LocalDate date = LocalDate.parse(dateField.getText().trim());
+        String type = typeField.getText().trim();
+        String desc = descField.getText().trim();
+        double cost = Double.parseDouble(costField.getText().trim());
+
+        service.addMaintenance(v, new MaintenanceRecord(date, type, desc, cost));
+        JOptionPane.showMessageDialog(this, "Maintenance registered successfully.");
+      } catch (Exception ex) {
+        JOptionPane.showMessageDialog(this, "Error: " + ex.getMessage(), "Invalid Input", JOptionPane.ERROR_MESSAGE);
+      }
+    });
+
+    refreshBtn.addActionListener(e -> refreshVehicleBox(vehicleBox));
+  }
+
+  private void refreshVehicleBox(JComboBox<Vehicle> vehicleBox) {
+    vehicleBox.removeAllItems();
+    for (Vehicle v : service.vehicles()) {
+      vehicleBox.addItem(v);
+    }
+  }
+}******************************************************
 
 ./src/com/huerta/fleetmanagementsystem/gui/MainWindow.java
 package com.huerta.fleetmanagementsystem.gui;
 
-public class MainWindow {
+import java.awt.BorderLayout;
 
-}
-******************************************************
+import javax.swing.JFrame;
+import javax.swing.JTabbedPane;
+
+import com.huerta.fleetmanagementsystem.model.fleet.Fleet;
+import com.huerta.fleetmanagementsystem.service.FleetService;
+
+public class MainWindow extends JFrame {
+
+  private final FleetService fleetService;
+
+  public MainWindow() {
+    super("Fleet Management System");
+
+    this.fleetService = new FleetService(new Fleet(null, null));
+
+    setSize(800, 600);
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    setLocationRelativeTo(null);
+
+    JTabbedPane tabs = new JTabbedPane();
+    tabs.addTab("Vehicles", new VehiclePanel(fleetService));
+    tabs.addTab("Drivers", new DriverPanel(fleetService));
+    tabs.addTab("Maintenance", new MaintenancePanel(fleetService));
+
+    setLayout(new BorderLayout());
+    add(tabs, BorderLayout.CENTER);
+  }
+}******************************************************
 
 ./src/com/huerta/fleetmanagementsystem/gui/VehiclePanel.java
 package com.huerta.fleetmanagementsystem.gui;
 
-public class VehiclePanel {
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
 
-}
-******************************************************
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
+
+import com.huerta.fleetmanagementsystem.model.enums.ServiceType;
+import com.huerta.fleetmanagementsystem.model.vehicle.Bus;
+import com.huerta.fleetmanagementsystem.model.vehicle.Car;
+import com.huerta.fleetmanagementsystem.model.vehicle.Motorcycle;
+import com.huerta.fleetmanagementsystem.model.vehicle.Truck;
+import com.huerta.fleetmanagementsystem.model.vehicle.Vehicle;
+import com.huerta.fleetmanagementsystem.service.FleetService;
+
+public class VehiclePanel extends JPanel {
+
+  private final FleetService service;
+
+  private final DefaultTableModel tableModel;
+  private final JTable table;
+
+  public VehiclePanel(FleetService service) {
+    this.service = service;
+
+    setLayout(new BorderLayout(10, 10));
+    setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+    // Table
+    tableModel = new DefaultTableModel(
+        new Object[] { "Type", "ID", "Plate", "Make", "Model", "Year", "Mileage", "OpCost" }, 0) {
+      @Override
+      public boolean isCellEditable(int row, int column) {
+        return false;
+      }
+    };
+    table = new JTable(tableModel);
+    add(new JScrollPane(table), BorderLayout.CENTER);
+
+    // Form
+    JPanel form = new JPanel(new GridLayout(0, 2, 8, 8));
+    form.setBorder(BorderFactory.createTitledBorder("Add Vehicle"));
+
+    JComboBox<String> typeBox = new JComboBox<>(new String[] { "Car", "Truck", "Motorcycle", "Bus" });
+
+    JTextField idField = new JTextField();
+    JTextField plateField = new JTextField();
+    JTextField makeField = new JTextField();
+    JTextField modelField = new JTextField();
+    JTextField yearField = new JTextField();
+    JTextField mileageField = new JTextField();
+
+    // Extra fields (we reuse depending on type)
+    JTextField seatingCapacityField = new JTextField(); // Car
+    JTextField powerSourceField = new JTextField(); // Car
+    JTextField payloadCapacityField = new JTextField(); // Truck
+    JTextField axleCountField = new JTextField(); // Truck
+    JTextField displacementField = new JTextField(); // Motorcycle
+    JTextField passengerCapacityField = new JTextField(); // Bus
+    JComboBox<ServiceType> serviceTypeBox = new JComboBox<>(ServiceType.values()); // Bus
+
+    form.add(new JLabel("Type:"));
+    form.add(typeBox);
+    form.add(new JLabel("ID:"));
+    form.add(idField);
+    form.add(new JLabel("License Plate:"));
+    form.add(plateField);
+    form.add(new JLabel("Make:"));
+    form.add(makeField);
+    form.add(new JLabel("Model:"));
+    form.add(modelField);
+    form.add(new JLabel("Year:"));
+    form.add(yearField);
+    form.add(new JLabel("Mileage:"));
+    form.add(mileageField);
+
+    form.add(new JLabel("Car: Seating Capacity:"));
+    form.add(seatingCapacityField);
+    form.add(new JLabel("Car: Power Source:"));
+    form.add(powerSourceField);
+
+    form.add(new JLabel("Truck: Payload Capacity:"));
+    form.add(payloadCapacityField);
+    form.add(new JLabel("Truck: Axle Count:"));
+    form.add(axleCountField);
+
+    form.add(new JLabel("Motorcycle: Displacement:"));
+    form.add(displacementField);
+
+    form.add(new JLabel("Bus: Passenger Capacity:"));
+    form.add(passengerCapacityField);
+    form.add(new JLabel("Bus: Service Type:"));
+    form.add(serviceTypeBox);
+
+    JButton addBtn = new JButton("Add Vehicle");
+    JButton refreshBtn = new JButton("Refresh");
+
+    JPanel actions = new JPanel();
+    actions.add(addBtn);
+    actions.add(refreshBtn);
+
+    JPanel south = new JPanel(new BorderLayout(10, 10));
+    south.add(form, BorderLayout.CENTER);
+    south.add(actions, BorderLayout.SOUTH);
+
+    add(south, BorderLayout.SOUTH);
+
+    // Actions
+    addBtn.addActionListener(e -> {
+      try {
+        String type = (String) typeBox.getSelectedItem();
+
+        long id = Long.parseLong(idField.getText().trim());
+        String plate = plateField.getText().trim();
+        String make = makeField.getText().trim();
+        String model = modelField.getText().trim();
+        int year = Integer.parseInt(yearField.getText().trim());
+        double mileage = Double.parseDouble(mileageField.getText().trim());
+
+        Vehicle v;
+        switch (type) {
+          case "Car":
+            int seats = Integer.parseInt(seatingCapacityField.getText().trim());
+            String power = powerSourceField.getText().trim();
+            v = new Car(id, plate, make, model, year, seats, power, mileage);
+            break;
+          case "Truck":
+            int payload = Integer.parseInt(payloadCapacityField.getText().trim());
+            int axles = Integer.parseInt(axleCountField.getText().trim());
+            v = new Truck(id, plate, make, model, year, payload, axles, mileage);
+            break;
+          case "Motorcycle":
+            int disp = Integer.parseInt(displacementField.getText().trim());
+            v = new Motorcycle(id, plate, make, model, year, disp, mileage);
+            break;
+          case "Bus":
+            int pass = Integer.parseInt(passengerCapacityField.getText().trim());
+            ServiceType st = (ServiceType) serviceTypeBox.getSelectedItem();
+            v = new Bus(id, plate, make, model, year, pass, st, mileage);
+            break;
+          default:
+            throw new IllegalArgumentException("Unknown vehicle type");
+        }
+
+        service.addVehicle(v);
+        JOptionPane.showMessageDialog(this, "Vehicle added successfully.");
+        refreshTable();
+      } catch (Exception ex) {
+        JOptionPane.showMessageDialog(this, "Error: " + ex.getMessage(), "Invalid Input", JOptionPane.ERROR_MESSAGE);
+      }
+    });
+
+    refreshBtn.addActionListener(e -> refreshTable());
+
+    refreshTable();
+  }
+
+  private void refreshTable() {
+    tableModel.setRowCount(0);
+    for (Vehicle v : service.vehicles()) {
+      tableModel.addRow(new Object[] {
+          v.getClass().getSimpleName(),
+          v.getId(),
+          v.getLicensePlate(),
+          v.getMake(),
+          v.getModel(),
+          v.getYear(),
+          v.getMileage(),
+          v.calculateOperatingCost()
+      });
+    }
+  }
+}******************************************************
 
 ./src/com/huerta/fleetmanagementsystem/interfaces/Assignable.java
 package com.huerta.fleetmanagementsystem.interfaces;
@@ -86,9 +452,12 @@ package com.huerta.fleetmanagementsystem.model.component;
 
 import com.huerta.fleetmanagementsystem.model.enums.BreakeType;
 
+import lombok.Getter;
+
+@Getter
 public class BreakingSystem {
   private BreakeType brakeType;
-  private String status;
+  private String status;;
 
   public BreakingSystem() {
   }
@@ -211,38 +580,119 @@ public enum TransmissionType {
 ./src/com/huerta/fleetmanagementsystem/model/fleet/Fleet.java
 package com.huerta.fleetmanagementsystem.model.fleet;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
+import com.huerta.fleetmanagementsystem.model.maintenance.MaintenanceRecord;
 import com.huerta.fleetmanagementsystem.model.person.Driver;
 import com.huerta.fleetmanagementsystem.model.vehicle.Vehicle;
 
 public class Fleet {
-  private List<Vehicle> vehicles;
 
-  private List<Driver> drivers;
+  private final List<Vehicle> vehicles;
+  private final List<Driver> drivers;
 
-  public Fleet(List<Vehicle> vehicles, List<Driver> drivers) {
-    this.vehicles = vehicles;
-    this.drivers = drivers;
+  public Fleet() {
+    this.vehicles = new ArrayList<>();
+    this.drivers = new ArrayList<>();
   }
 
+  public Fleet(List<Vehicle> vehicles, List<Driver> drivers) {
+    this.vehicles = (vehicles == null) ? new ArrayList<>() : new ArrayList<>(vehicles);
+    this.drivers = (drivers == null) ? new ArrayList<>() : new ArrayList<>(drivers);
+  }
+
+  // Expose read-only views to preserve encapsulation (simple + safe)
   public List<Vehicle> getVehicles() {
-    return vehicles;
+    return Collections.unmodifiableList(vehicles);
   }
 
   public List<Driver> getDrivers() {
-    return drivers;
+    return Collections.unmodifiableList(drivers);
   }
 
-  public void setDrivers(List<Driver> drivers) {
-    this.drivers = drivers;
+  // ---- CRUD-like operations ----
+
+  public void addVehicle(Vehicle vehicle) {
+    if (vehicle != null) {
+      vehicles.add(vehicle);
+    }
   }
 
-  public void setVehicles(List<Vehicle> vehicles) {
-    this.vehicles = vehicles;
+  public boolean removeVehicle(Vehicle vehicle) {
+    return vehicles.remove(vehicle);
   }
-}
-******************************************************
+
+  public void addDriver(Driver driver) {
+    if (driver != null) {
+      drivers.add(driver);
+    }
+  }
+
+  public boolean removeDriver(Driver driver) {
+    // Optional: if driver is assigned to any vehicle, release it
+    for (Vehicle v : vehicles) {
+      if (v != null && v.getDriver() == driver) {
+        v.releaseDriver();
+      }
+    }
+    return drivers.remove(driver);
+  }
+
+  // ---- Operations required by the domain ----
+
+  public void assignDriverToVehicle(Driver driver, Vehicle vehicle) {
+    if (driver == null || vehicle == null)
+      return;
+
+    // Ensure both belong to this fleet (simple rule)
+    if (!drivers.contains(driver))
+      drivers.add(driver);
+    if (!vehicles.contains(vehicle))
+      vehicles.add(vehicle);
+
+    vehicle.assignDriver(driver);
+  }
+
+  public void releaseDriverFromVehicle(Vehicle vehicle) {
+    if (vehicle == null)
+      return;
+    vehicle.releaseDriver();
+  }
+
+  public void registerMaintenance(Vehicle vehicle, MaintenanceRecord record) {
+    if (vehicle == null || record == null)
+      return;
+
+    if (!vehicles.contains(vehicle))
+      vehicles.add(vehicle);
+
+    vehicle.registerMaintenance(record);
+  }
+
+  // ---- Polymorphism demo helper methods ----
+
+  public double calculateTotalOperatingCost() {
+    double total = 0.0;
+    for (Vehicle v : vehicles) {
+      if (v != null) {
+        total += v.calculateOperatingCost(); // dynamic dispatch
+      }
+    }
+    return total;
+  }
+
+  public List<String> generateFleetReports() {
+    List<String> reports = new ArrayList<>();
+    for (Vehicle v : vehicles) {
+      if (v != null) {
+        reports.add(v.generateReport());
+      }
+    }
+    return reports;
+  }
+}******************************************************
 
 ./src/com/huerta/fleetmanagementsystem/model/maintenance/MaintenanceRecord.java
 package com.huerta.fleetmanagementsystem.model.maintenance;
@@ -342,8 +792,8 @@ public class Bus extends Vehicle {
   private ServiceType serviceType;
 
   public Bus(long id, String licensePlate, String make, String model, int year, int passengerCapacity,
-      ServiceType serviceType) {
-    super(id, licensePlate, make, model, year);
+      ServiceType serviceType, double mileage) {
+    super(id, licensePlate, make, model, year, mileage);
     this.passengerCapacity = passengerCapacity;
     this.serviceType = serviceType;
   }
@@ -366,8 +816,30 @@ public class Bus extends Vehicle {
 
   @Override
   public double calculateOperatingCost() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+
+    double baseCost = 150.0;
+
+    double mileageFactor = getMileage() * 0.025;
+
+    double passengerFactor = this.passengerCapacity * 4.0;
+
+    double serviceFactor;
+    if (this.serviceType != null) {
+      switch (this.serviceType) {
+        case CITY:
+          serviceFactor = 40.0;
+          break;
+        case INTERCITY:
+          serviceFactor = 70.0;
+          break;
+        default:
+          serviceFactor = 50.0;
+      }
+    } else {
+      serviceFactor = 50.0;
+    }
+
+    return baseCost + mileageFactor + passengerFactor + serviceFactor;
   }
 }
 ******************************************************
@@ -382,8 +854,8 @@ public class Car extends Vehicle {
   private String powerSource;
 
   public Car(long id, String licensePlate, String make, String model, int year, int seatingCapacity,
-      String powerSource) {
-    super(id, licensePlate, make, model, year);
+      String powerSource, double mileage) {
+    super(id, licensePlate, make, model, year, mileage);
     this.seatingCapacity = seatingCapacity;
     this.powerSource = powerSource;
   }
@@ -406,8 +878,33 @@ public class Car extends Vehicle {
 
   @Override
   public double calculateOperatingCost() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+
+    double baseCost = 100.0;
+
+    double mileageFactor = getMileage() * 0.02;
+
+    double seatingFactor = this.seatingCapacity * 5.0;
+
+    double powerFactor;
+    if (powerSource != null) {
+      switch (powerSource.trim().toUpperCase()) {
+        case "ELECTRIC":
+          powerFactor = 10.0;
+          break;
+        case "DIESEL":
+          powerFactor = 25.0;
+          break;
+        case "GASOLINE":
+          powerFactor = 20.0;
+          break;
+        default:
+          powerFactor = 15.0;
+      }
+    } else {
+      powerFactor = 15.0;
+    }
+
+    return baseCost + mileageFactor + seatingFactor + powerFactor;
   }
 }
 ******************************************************
@@ -420,8 +917,8 @@ public class Motorcycle extends Vehicle {
   private int engineDisplacement;
 
   public Motorcycle(long id, String licensePlate, String make, String model, int year,
-      int engineDisplacement) {
-    super(id, licensePlate, make, model, year);
+      int engineDisplacement, double mileage) {
+    super(id, licensePlate, make, model, year, mileage);
     this.engineDisplacement = engineDisplacement;
   }
 
@@ -435,8 +932,14 @@ public class Motorcycle extends Vehicle {
 
   @Override
   public double calculateOperatingCost() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+
+    double baseCost = 60.0;
+
+    double mileageFactor = getMileage() * 0.015;
+
+    double displacementFactor = this.engineDisplacement * 0.05;
+
+    return baseCost + mileageFactor + displacementFactor;
   }
 }
 ******************************************************
@@ -451,8 +954,8 @@ public class Truck extends Vehicle {
   private int axleCount;
 
   public Truck(long id, String licensePlate, String make, String model, int year, int payloadCapacity,
-      int axleCount) {
-    super(id, licensePlate, make, model, year);
+      int axleCount, double mileage) {
+    super(id, licensePlate, make, model, year, mileage);
     this.payloadCapacity = payloadCapacity;
     this.axleCount = axleCount;
   }
@@ -475,8 +978,16 @@ public class Truck extends Vehicle {
 
   @Override
   public double calculateOperatingCost() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
+
+    double baseCost = 200.0;
+
+    double mileageFactor = getMileage() * 0.03;
+
+    double payloadFactor = this.payloadCapacity * 2.5;
+
+    double axleFactor = this.axleCount * 30.0;
+
+    return baseCost + mileageFactor + payloadFactor + axleFactor;
   }
 }
 ******************************************************
@@ -521,12 +1032,13 @@ public abstract class Vehicle implements Assignable, Calculable, Maintainable, R
   public Vehicle() {
   }
 
-  public Vehicle(long id, String licensePlate, String make, String model, int year) {
+  public Vehicle(long id, String licensePlate, String make, String model, int year, double mileage) {
     this.id = id;
     this.licensePlate = licensePlate;
     this.make = make;
     this.model = model;
     this.year = year;
+    this.mileage = mileage;
     this.engine = new Engine();
     this.transmission = new Transmission();
     this.breakingSystem = new BreakingSystem();
@@ -613,8 +1125,55 @@ public abstract class Vehicle implements Assignable, Calculable, Maintainable, R
 ./src/com/huerta/fleetmanagementsystem/service/FleetService.java
 package com.huerta.fleetmanagementsystem.service;
 
+import java.util.List;
+
+import com.huerta.fleetmanagementsystem.model.fleet.Fleet;
+import com.huerta.fleetmanagementsystem.model.maintenance.MaintenanceRecord;
+import com.huerta.fleetmanagementsystem.model.person.Driver;
+import com.huerta.fleetmanagementsystem.model.vehicle.Vehicle;
+
 public class FleetService {
 
-}
-******************************************************
+  private final Fleet fleet;
+
+  public FleetService(Fleet fleet) {
+    this.fleet = fleet;
+  }
+
+  public Fleet getFleet() {
+    return fleet;
+  }
+
+  public List<Vehicle> vehicles() {
+    return fleet.getVehicles();
+  }
+
+  public List<Driver> drivers() {
+    return fleet.getDrivers();
+  }
+
+  public void addVehicle(Vehicle v) {
+    fleet.getVehicles().add(v);
+  }
+
+  public void addDriver(Driver d) {
+    fleet.getDrivers().add(d);
+  }
+
+  public void assignDriver(Vehicle v, Driver d) {
+    v.assignDriver(d);
+  }
+
+  public void addMaintenance(Vehicle v, MaintenanceRecord r) {
+    v.registerMaintenance(r);
+  }
+
+  public double totalOperatingCost() {
+    double total = 0.0;
+    for (Vehicle v : vehicles()) {
+      total += v.calculateOperatingCost(); // polymorphism
+    }
+    return total;
+  }
+}******************************************************
 

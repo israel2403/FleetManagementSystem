@@ -1,0 +1,10 @@
+com.huerta.fleetmanagementsystem.app
+com.huerta.fleetmanagementsystem.gui
+com.huerta.fleetmanagementsystem.interfaces
+com.huerta.fleetmanagementsystem.model.component
+com.huerta.fleetmanagementsystem.model.enums
+com.huerta.fleetmanagementsystem.model.fleet
+com.huerta.fleetmanagementsystem.model.maintenance
+com.huerta.fleetmanagementsystem.model.person
+com.huerta.fleetmanagementsystem.model.vehicle
+com.huerta.fleetmanagementsystem.service
